@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Exemplo de formulário obrigatório</title>
+        <meta charset="utf-8" >
+        <meta name="description" content="Formulário com campos obrigatórios" >
+        <meta name="author" content="Bruno Aquino" >
+        <meta name="keywords" content="HTML, CSS, JS, FORM" >
+    </head>
+    <body>
+        <form action="cadastro.php" method="POST">
+            <filedset>
+                <legend>Informações pessoais</legend>
+                Nome: <br />
+                <input type="text" name="nome" required autofocus><br />
+                Senha: <br />
+                <input type="password" name="senha"> <br />
+                <input type="submit" name="btn-enviar" value="Enviar"> 
+            </filedset>
+        </form>
+    </body>
+</html>
