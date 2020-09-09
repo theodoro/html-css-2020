@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Trabalhando os atributos de formulários</title>
+        <meta charset="utf-8" >
+        <meta name="description" content="Exemplo de formulários" >
+        <meta name="author" content="Bruno Aquino" >
+        <meta name="keywords" content="HTML, CSS, FORM, formulários" >
+    </head>
+    
+    <body>
+    
+    <form action="cadastro.php" method="POST">
+        <fieldset>
+            <legend>Exemplo de formulários</legend>
+            
+            Nome: <br />
+            <input type="text" name="nome" required autofocus maxlength="10" > <br />
+            Senha: <br />
+            <input type="password" name="senha"> <br />
+            Email: <br />
+            <input type="email" name="email" required> <br />
+            Time: <br />
+            <input type="radio" name="time" value="Palmeiras">Palmeiras <br />
+            <input type="radio" name="time" value="Santos">Santos <br />
+            <input type="radio" name="time" value="SPFC">SPFC <br />
+            
+            Cores: <br />
+            <input type="checkbox" name="cores" value="verde">Verde <br />
+            <input type="checkbox" name="cores" value="preto">Preto <br />
+            <input type="checkbox" name="cores" value="vermelho">Vermelho <br />
+            
+            <input type="submit" name="btn-enviar" value="Enviar" >
+        </fieldset>
+    </form>
+    
+    </body>
+</html>
