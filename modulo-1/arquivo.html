@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <title>Exemplo de formulário com auto complete</title>
+        <meta charset="utf-08" >
+        <meta name="description" content="Formulário com auto completar" >
+        <meta name="author" content="Bruno Aquino" >
+        <meta name="keywords" content="HTML, CSS, JS" >
+    </head>
+    
+    <body>
+        <form action="cadastro.html">
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                Nome <br>
+                <input type="text" name="nome" required autofocus ><br>
+                Senha<br>
+                <input type="password" name="senha" required ><br>
+                Email<br>
+                <input type="email" name="email"  autocomplete="on" placeholder="seuemail@email.com"><br>
+                Imagem:<br>
+                <input type="file" name="img"><br><br>
+                
+                <input type="hidden" name="id"><br><br>
+                
+                URL:<br>
+                <input type="url" name="site"><br>
+                Search:<br>
+                <input type="search" name="pesquisa"><br>
+                Telefone:<br>
+                <input type="tel" name="telefone"><br>
+                
+                <input type="submit" name="btn-enviar" value="Enviar" ><br>
+            </fieldset>
+        </form>
+    </body>
+</html>
