@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	
+	<head>
+		<title>Atributos de formulários</title>
+		<meta charset="utf-8" >
+		<meta name="description" content="Formulários com vários atributos" >
+		<meta name="author" content="Bruno Aquino" >
+		<meta name="keywords" content="HTML" >
+	</head>
+	
+	<body>
+		<form id="form-cadastro" enctype="application/x-www.form-urlencoded" name="formulario-cadastro" >
+			Email:<br>
+			<input type="email" name="email" required placeholder="seuemail@dominio.com" >
+			<input type="submit" name="cadastrar" formaction="cadastro.jsp" formmethod="POST" value="Cadastrar" >
+			<input type="submit" name="env-email" formaction="enviar.jsp" formmethod="GET" value="Enviar por email" >
+		</form><br>
+		
+		Nome:<br>
+		<input type="text" name="nome" form="form-cadastro" >
+		
+	</body>
+	
+<html>

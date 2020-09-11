@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <title>Exemplo de formulário com auto complete</title>
+        <meta charset="utf-08" >
+        <meta name="description" content="Formulário com auto completar" >
+        <meta name="author" content="Bruno Aquino" >
+        <meta name="keywords" content="HTML, CSS, JS" >
+    </head>
+    
+    <body>
+        <form action="cadastro.html">
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                Nome <br>
+                <input type="text" name="nome" required autofocus ><br>
+                Senha<br>
+                <input type="password" name="senha" required ><br>
+                Email<br>
+                <input type="email" name="email"  autocomplete="on" placeholder="seuemail@email.com"><br>
+                Imagem:<br>
+                <input type="file" name="img"><br><br>
+				
+				Data:<br>
+				<input type="date" name="data" min="2000-12-31" max="2030-12-31"><br>
+				Hora:<br>
+				<input type="time" name="hora"><br>
+				Mês e ano:<br>
+				<input type="month" name="meseano"><br>
+				Semana:<br>
+				<input type="week" name="semana"> <br>
+				Data e Hora:<br>
+				<input type="datetime-local" name="data-e-hora"> <br>
+				Mensagem:<br>
+				<textarea name="mensagem" rows="5" cols="30" spellcheck="false"></textarea><br>
+				<button type="button">Clique</button><br>
+				
+				<select name="veiculos">
+					<optgroup label="carros">
+						<option value="Camaro">Camaro</option>
+						<option value="Fusca">Fusca</option>
+						<option value="Monza">Monza</option>
+					</optgroup>
+					<optgroup label="Motos">
+						<option value="Titan">Titan</option>
+						<option value="Ninja">Ninja</option>
+						<option value="POP" selected>POP</option>
+					</optgroup>
+				</select><br>
+				
+				Escola um curso:<br>
+				
+				<input name="cursos" list="lista-cursos">
+					<datalist id="lista-cursos">
+						<option value="Java"></option>
+						<option value="PHP"></option>
+						<option value="JavaScript"></option>	
+					</datalist><br><br>
+                
+                <input type="hidden" name="id"><br><br>
+                
+                URL:<br>
+                <input type="url" name="site"><br>
+                Search:<br>
+                <input type="search" name="pesquisa"><br>
+                Telefone:<br>
+                <input type="tel" name="telefone"><br>
+                
+                <input type="submit" name="btn-enviar" value="Enviar" ><br>
+            </fieldset>
+        </form>
+    </body>
+</html>
